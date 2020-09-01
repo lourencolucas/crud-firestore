@@ -39,7 +39,7 @@ var tabela = document.getElementById('tabela'); //Variavel para preencher os dad
 db.collection("product").onSnapshot((querySnapshot) => {
     tabela.innerHTML = ''; //deixar tabela em branco para receber arquivos
     querySnapshot.forEach((doc) => {
-        // console.log(`${doc.id} => ${doc.data()}`);
+        console.log(`${doc.id} => ${doc.data()}`);
         //preencher a tabela com os dados
         //<th scope="row">${doc.id}</th>
         tabela.innerHTML += `
